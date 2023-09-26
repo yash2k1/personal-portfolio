@@ -5,7 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
-
+import certificate from "../../Assets/Projects/certificate.png"
 function About() {
   return (
     <Container fluid className="about-section">
@@ -44,7 +44,10 @@ function About() {
         </h1>
         <Toolstack />
 
-        {/* <Github /> */}
+        <h1 style={{paddingBottom:"10px"}} className="project-heading">
+          <strong className="purple">Certi</strong>ficate
+        </h1>
+        <img style={{ width: "90%", margin:"auto",aspectRatio:"1.5/1" }} src={certificate} alt="not found" />
       </Container>
     </Container>
   );
